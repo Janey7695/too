@@ -28,6 +28,7 @@ threadpool_t *threadpool_create(
 		DEBUG_ERROR("malloc threadpool faild in %s",__func__);
 		return NULL;
 	}
+	pool->shutdown = 0;
 	pool->min_thr_num = min_thr_num;
 	pool->max_thr_num = max_thr_num;
 	pool->busy_thr_num = 0;
