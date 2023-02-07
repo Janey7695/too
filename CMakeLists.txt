@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.6)
 
-option(BUILD_TEST "build test" ON)
+option(BUILD_EXAMPLE "build example" ON)
 option(BUILD_SHARED "build shared library" ON)
 option(BUILD_STATIC "build static library" ON)
 
@@ -23,6 +23,6 @@ if(BUILD_STATIC)
 endif()
 
 if(BUILD_TEST)
-	add_subdirectory(test)
+	add_subdirectory(example)
 endif()
 
